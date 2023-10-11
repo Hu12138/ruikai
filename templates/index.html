@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>睿凯装饰工程公司</title>
+    <!-- Bootstrap 5 CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <!-- Font Awesome CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            color: #444;
+            background-color: #f9f9f9;
+        }
+
+        .main-title {
+            font-size: 36px;
+            font-weight: bold;
+            color: #007bff;
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        .navbar {
+            background-color: #f8f9fa;
+        }
+
+        .navbar-brand {
+            font-size: 24px;
+            font-weight: bold;
+            color: #007bff;
+        }
+
+        .navbar-logo {
+            height: 40px;
+            margin-right: 10px;
+        }
+
+        .navbar-nav .nav-link {
+            color: #007bff;
+            font-size: 18px;
+        }
+
+        .navbar-toggler {
+            border: 2px solid #007bff;
+        }
+
+        .navbar-toggler-icon {
+            color: #007bff;
+        }
+
+        .carousel-inner img {
+            width: 100%;
+            height: 400px;
+        }
+
+        .info-section {
+            text-align: center;
+            background-color: #f8f9fa;
+            padding: 30px;
+            border-radius: 5px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .info-section p {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .quote-form .form-control {
+            width: auto;
+            display: inline-block;
+            margin-right: 10px;
+        }
+
+        .quote-form button {
+            width: auto;
+        }
+
+        .case-item {
+            margin-bottom: 20px;
+            text-align: center;
+            background-color: #f8f9fa;
+            padding: 15px;
+            border-radius: 5px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .case-item img {
+            max-width: 100%;
+        }
+
+        .home-guide {
+            list-style: none;
+            padding-left: 0;
+        }
+
+        .home-guide li {
+            margin-bottom: 10px;
+            padding-left: 30px;
+            position: relative;
+            background-color: #f8f9fa;
+            padding: 10px;
+            border-radius: 5px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .home-guide li i {
+            color: #007bff; /* 为每个图标设置颜色 */
+            margin-right: 10px;
+        }
+
+        .contact-section {
+            background-color: #f8f9fa;
+            padding: 30px;
+            border-radius: 5px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .contact-info {
+            font-size: 18px;
+            color: #444;
+            text-align: center;
+        }
+
+        .contact-info i {
+            color: #007bff;
+            font-size: 24px;
+            margin-right: 10px;
+        }
+        
+        .custom-alert {
+            background-color: #007bff;
+            color: #fff;
+            text-align: center;
+            padding: 10px;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- 导航栏 -->
+    <nav class="navbar navbar-expand-lg">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <img src="https://via.placeholder.com/50x40" class="navbar-logo" alt="睿凯装饰工程装修公司">
+                睿凯装饰工程装修公司
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#home">首页</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#company">公司介绍</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#cases">装修案例</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#guide">家装指南</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">联系我们</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- 轮播图 -->
+    <div id="home" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="static/img/枫叶山路.jpeg" alt="装修公司轮播图1">
+            </div>
+            <div class="carousel-item">
+                <img src="static/img/海浪.jpeg" alt="装修公司轮播图2">
+            </div>
+            <div class="carousel-item">
+                <img src="static/img/山路.jpeg" alt="装修公司轮播图3">
+            </div>
+        </div>
+        <a class="carousel-control-prev" href="#home" role="button" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#home" role="button" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </a>
+    </div>
+
+
+    <!-- 报价表单 -->
+    {% with messages = get_flashed_messages(with_categories=true) %}
+    {% if messages %}
+        {% for category,message in messages %}
+        <div class="container mt-3">
+            <div class="custom-alert">
+                <i class="fas fa-exclamation-circle">
+                </i> 
+                {{ message }}
+            </div>
+        </div>
+        {% endfor %}
+    {% endif %}
+{% endwith %}
+
+
+    <div class="container mt-5" id="quote">
+        <div class="info-section">
+            <h2 class="main-title">获取免费装修报价</h2>
+            <form class="quote-form" method="POST" action="/queryPrice">
+                <div class="row align-items-center">
+                    <div class="col-md-3">
+                        <input type="text" class="form-control" placeholder="称呼" name="name" required>
+                    </div>
+                    <div class="col-md-3">
+                        <input type="tel" class="form-control" placeholder="联系电话" name="phone" required>
+                    </div>
+                    <div class="col-md-3">
+                        <input type="text" class="form-control" placeholder="小区名称" name="community" required>
+                    </div>
+                    <div class="col-md-3">
+                        <input type="text" class="form-control" placeholder="房型面积" name="area" required>
+                    </div>
+                </div>
+                <div class="row align-items-center mt-3">
+                    <div class="col-md-12">
+                        <button class="btn btn-primary" type="submit">获取报价</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <!-- 公司介绍 -->
+    <div class="container mt-5" id="company">
+        <div class="info-section">
+            <h2 class="main-title">公司介绍</h2>
+            <p>睿凯装饰工程公司是一家专业的装修服务提供商，为客户提供高品质的装修解决方案。我们拥有经验丰富的团队，熟悉最新的装修趋势和技术。无论您需要家庭装修还是商业装修，我们都能满足您的需求并确保工程质量。我们以客户满意为目标，为每位客户量身定制最佳方案，使每个家庭都能拥有美丽舒适的居住环境。</p>
+        </div>
+    </div>
+
+    <!-- 装修案例介绍 -->
+    <div class="container mt-5" id="cases">
+        <h2 class="main-title">装修案例</h2>
+        <div class="row">
+            <div class="col-md-4">
+                <a href="case1" class="case-link">
+                    <div class="case-item">
+                        <img src="static/img/WechatIMG41.jpg" class="img-fluid" alt="装修案例1">
+                        <p>案例1：现代简约风格，装修面积：100平米。</p>
+                    </div>
+                </a>
+            </div>
+            <div class="col-md-4">
+                <div class="case-item">
+                    <img src="https://via.placeholder.com/300x200" class="img-fluid" alt="装修案例2">
+                    <p>案例2：欧式古典风格，装修面积：150平米。</p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="case-item">
+                    <img src="https://via.placeholder.com/300x200" class="img-fluid" alt="装修案例3">
+                    <p>案例3：北欧风情，装修面积：120平米。</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 家装指南 -->
+    <div class="container mt-5" id="guide">
+        <h2 class="main-title">家装指南</h2>
+        <ul class="home-guide">
+            <li>
+                <i class="fas fa-money-bill-wave"></i>
+                预算规划：在装修前，确定好装修预算，避免超支。
+            </li>
+            <li>
+                <i class="fas fa-paint-roller"></i>
+                风格选择：选择适合自己家庭风格的装修风格，不要盲目跟风。
+            </li>
+            <li>
+                <i class="fas fa-couch"></i>
+                空间布局：合理规划空间布局，充分考虑家庭成员的需求。
+            </li>
+            <li>
+                <i class="fas fa-hammer"></i>
+                材料选购：选择优质的装修材料，确保装修质量。
+            </li>
+            <li>
+                <i class="fas fa-box"></i>
+                储物空间：保留足够的储物空间，让家居整洁有序。
+            </li>
+            <li>
+                <i class="fas fa-exclamation-triangle"></i>
+                家居安全：考虑家居安全问题，尽量避免尖锐边角。
+            </li>
+            <li>
+                <i class="fas fa-leaf"></i>
+                环保装修：装修时尽量选择环保材料，关爱家人健康。
+            </li>
+            <li>
+                <i class="fas fa-wind"></i>
+                通风换气：装修后要注意通风换气，排除甲醛等有害气体。
+            </li>
+        </ul>
+        <div class="row mt-3">
+            <div class="col-md-6 offset-md-3 text-center">
+                <img src="https://via.placeholder.com/500x300" class="img-fluid" alt="家装指南图片">
+            </div>
+        </div>
+    </div>
+
+    <!-- 公司联系方式 -->
+    <div class="container mt-5" id="contact">
+        <div class="contact-section">
+            <h2 class="main-title">联系我们</h2>
+            <div class="contact-info">
+                <p><i class="fas fa-phone"></i>电话：+1 (123) 456-7890</p>
+                <p><i class="fas fa-envelope"></i>电子邮件：info@cityhomes.com</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap 5 JS (Make sure to include Popper.js and Bootstrap JS before closing the body tag) -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
+</body>
+
+</html>
