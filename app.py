@@ -30,7 +30,7 @@ def queryPrice():
     area = request.form['area']
 
     # sender：发件人    recipients：收件人
-    msg = Message('新的报价信息', sender = '3330861773@qq.com', recipients = ['2252424406@qq.com'])
+    msg = Message('新的报价信息', sender = '3330861773@qq.com', recipients = ['2252424406@qq.com','2644756040@qq.com'])
     msg.body = f"姓名: {name}, 联系方式: {phone}, 小区: {community}, 面积: {area}"
     mail.send(msg)#发送Message类对象的内容
     print("发送成功")
@@ -38,4 +38,4 @@ def queryPrice():
     return redirect(url_for("index"))
 
 if __name__ == '__main__':
-    app.run(debug=True)
+    app.run()
